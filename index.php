@@ -1,11 +1,5 @@
 <?php include 'header.php'; ?>
 
-
-<!--esto es una prueba -->
-
-
-
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -16,11 +10,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
-
-<!--esto es una prueba -->
-
-
-
 
 <!-- Estilos personalizados mejorados -->
 <style>
