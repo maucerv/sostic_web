@@ -1,0 +1,73 @@
+/* =========================
+   TIPOGRAFÍAS Y BASE
+   ========================= */
+body {
+  font-family: 'Quicksand', Arial, sans-serif; /* reemplazo de Myriad Pro */
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  background: radial-gradient(ellipse at top right, #6aad47, #bbd8a0, #bbf7d0);
+}
+.texto-justificado {
+    text-align: justify;
+}
+/* =========================
+   BOTONES
+   ========================= */
+.cta-button {
+  background: #1d4ed8; /* azul fuerte */
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+.cta-button:hover {
+  background: #2563eb;
+  transform: scale(1.05);
+}
+
+/* =========================
+   SECCIONES
+   ========================= */
+section { 
+  background: #6aad47;
+  padding: 30px;
+  margin: 20px 0;
+  border-radius: 0; /* esquinas rectas */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+section h2, section h3 {
+  font-family: 'Exo', sans-serif;
+  margin-bottom: 15px;
+}
+section p {
+  font-family: 'Quicksand', Arial, sans-serif;
+  line-height: 1.6;
+}
+p {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+  
+}
+
+.footer section {
+  background: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 0 !important; 
+  box-shadow: none !important;
+}
+
+
