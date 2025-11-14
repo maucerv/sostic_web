@@ -1,5 +1,11 @@
 <?php include 'header.php'; ?>
 
+
+<!--esto es una prueba -->
+
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
