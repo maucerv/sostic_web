@@ -218,15 +218,17 @@
   /* Hero mejorado con imagen de fondo */
   .hero {
     background-image: url('img/index.jpeg');
-    background-size: 130% auto;
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
-    padding: 100px 0 80px;
+    /* Aumenta espacio superior e inferior para un hero más grande */
+    padding: 140px 0 100px;
     text-align: center;
     overflow: hidden;
-    min-height: 60vh;
+    /* Hacemos que el hero ocupe más altura de la ventana */
+    min-height: 75vh;
   }
 
   /* Overlay mínimo solo para garantizar legibilidad del texto blanco */
@@ -237,8 +239,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    /* Overlay casi transparente solo para contraste del texto */
-    background: rgba(0, 0, 0, 0.15);
+    /* Overlay más oscuro para efecto tipo 'hero' como en la imagen adjunta */
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.55));
     pointer-events: none;
     z-index: 1;
   }
@@ -262,32 +264,50 @@
   .hero .container {
     position: relative;
     z-index: 2;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
   }
 
+  /* Titular grande tipo pantalla de inicio */
   .hero h2 {
-    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-size: clamp(3.2rem, 7vw, 6rem);
     color: white;
-    margin-bottom: 1.5rem;
-    text-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    margin-bottom: 1rem;
+    text-shadow: 0 8px 30px rgba(0,0,0,0.5);
     background: none;
     -webkit-text-fill-color: white;
+    line-height: 1.02;
+    letter-spacing: 0.02em;
+    font-weight: 900;
+    margin-top: 0.25rem;
   }
 
+
   .hero p {
-    font-size: clamp(1.8rem, 4.5vw, 2.6rem);
+    font-size: clamp(1rem, 1.6vw, 1.5rem);
     color: rgba(255,255,255,0.95);
-    margin-bottom: 0.3rem;
-    font-weight: 600;
-    letter-spacing: 0.025em;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    margin-bottom: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.35);
     font-family: 'Exo', sans-serif;
-    line-height: 1.2;
+    line-height: 1.4;
   }
 
   .hero p:last-of-type {
     margin-bottom: 2.5rem;
+  }
+
+  /* Botón principal más grande en el hero */
+  .hero .cta-button {
+    padding: 18px 44px;
+    font-size: 1.05rem;
+    border-radius: 40px;
+    box-shadow: 0 14px 50px rgba(100,194,56,0.35);
+  }
+
+  .hero .cta-button + .cta-button-secondary {
+    margin-left: 18px;
   }
 
   /* Wave separator mejorado y corregido */
@@ -493,10 +513,20 @@
     }
     
     .hero {
-      padding: 70px 0 50px;
+      /* Ajustes responsive: mantener hero prominente en pantallas pequeñas */
+      padding: 90px 0 60px;
       background-attachment: scroll;
-      background-size: 140% auto;
-      min-height: 50vh;
+      background-size: cover;
+      min-height: 60vh;
+    }
+
+    .hero h2 {
+      font-size: clamp(2.2rem, 7.5vw, 3.2rem);
+      line-height: 1.05;
+    }
+
+    .hero p {
+      font-size: 1rem;
     }
   }
 
