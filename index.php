@@ -217,9 +217,9 @@
 
   /* Hero mejorado con imagen de fondo */
   .hero {
-    background-image: url('img/6912604_Motion_Graphics_Motion_Graphic_1920x1080.mp4');
+    background-image: url('img/index.jpeg');
     /* Aumenta el zoom de la imagen para que se vea "más grande" */
-    background-size: 130% auto;
+    background-size: 160% auto;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
